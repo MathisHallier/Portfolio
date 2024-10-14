@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mon Portfolio</title>
+    <title>Mathis Hallier's Portfolio</title>
     <style>
         body {
             display: flex;
@@ -14,10 +14,12 @@
         }
         header {
             background-color: #333;
-            color: white;
-            padding: 1em;
+            color: #FBFCFA;
+            padding: 0.10em;
             text-align: center;
+            margin-bottom: 1em;
         }
+        
         img {
             max-width: 100%;
             height: auto;
@@ -37,11 +39,20 @@
             color: #FBFCFA;
         }
         .content {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 80vw;
+            margin: 1em auto;
             background-color: white;
             padding: 1.5em;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .content-column {
+            max-width: 40vw;
+            margin: 1em auto;
+            background-color: white;
+            padding: 1.5em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         .container {
             display: flex;
@@ -49,9 +60,15 @@
             padding: 20px;
             gap: 20px; 
         }
+        img {
+            max-width: 40vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
         footer {
             text-align: center;
-            padding: 1em;
+            padding: 0.5em;
             background-color: #333;
             color: white;
             position: fixed;
@@ -69,44 +86,101 @@
             text-align: justify;
 
         }
+        h2 {
+            margin: 0px;
+            padding: 0px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Bienvenue sur mon Portfolio</h1>
+    <h1>Mathis HALLIER's Portfolio</h1>
 </header>
 
-    <section>
-        <div class="content">
+        <div class="content" style="margin-bottom: 7em;">
             <h2>Research in AI</h2>
-            <p>This section shows up the visualization method I worked on during my Research experience in Warsaw.</p>
-            <p>We were three taking part of this project, two supervisor and me. They were guiding and correcting me and I was in charge of creating the theory, implementing it with a python library or with Bokeh a web visualization library.</p>
-            <p>This method let the user visualize complex dataset in high dimensional spaces. This method can be used for any numerical datasets such as in finance, marketing...</p>
+            <p>Analyzing any complex dataset is a challenge. A good analysis can boost the results of an instution. The analysis of a dataset always starts with a visualization allowing a good understanding of the dataset. However, visualizing complex datasets is difficult and can lead to wrong hypothesis.</p>
+            
+            <p>The new method I worked on during my Research experience in Warsaw allows the visualization of any dataset. We were three taking part of this project, two supervisors and I. They guided me and I was in charge of creating the theory, of the implementation with python but also of the presentation of the tool. This method based on clustering (AI) algorithms allows the user visualize complex datasets in different domains such as biological, finance, real estate and more.</p>
             <p>The following examples are showing the rendered visualization for real or toy datasets.</p>
-            <section>
-                <div class="content">
-                    <h2>Example of a ClusterGraph :</h2>
+
+            <div class="container">
+                <div class="content-column">
+                    <h2 style="text-align: center;">Visualization of a dataset about diabete :</h2>
+                    <p>This is a visualization of a dataset with 6 variables related to diabetes. The graph was generated using the KMeans algorithm. Each ball represents a population and is colored based on the average insulin level. Two branches can be observed: the left branch with a low insulin level and the right branch with a high insulin level. This type of visualization can quickly reveal two types of diabetes. </p>
                     <img src="Biology/Diabete_colored_Insuline.png" alt="Description de l'image">
                 </div>
-            </section>
-            <h3>Examples from biology</h3>
-            <ul>
-                <li><a href="Biology/thyroid_visualization.html">Visualization of a thyroid dataset</a></li>
-                <li><a href="Biology/Diabete_cg_glucose_level.html">Visualization of a diabete dataset</a></li>
-                <li><a href="Biology/human_RNA_KM40_labels.html">Visualization of a dataset of the neurons for a given treatment</a></li>
-            </ul>
-            <h3>Toy examples</h3>
-            <ul>
-                <li><a href="Toy_examples/Noisy_circles_KM.html">Visualization of a toy example two noisy circles</a></li>
-                <li><a href="Toy_examples/deformed_glasses.html">Visualization of a toy example representing deformed glasses</a></li>
-            </ul>
+
+                <div class="content">
+                    <h2 style="text-align: center;">Web visualizations :</h2>
+
+                    <h3>Examples from biology</h3>
+                    <p>In the following schemes, each color corresponds to a label inside the population. As an example for the neurons dataset, each color corresponds to a person. By using the slider bar, it is possible to select a label and observe in which balls this label is.</p>
+                    <ul>
+                        <li><a href="Biology/thyroid_visualization.html">Visualization of a thyroid dataset</a></li>
+                        <li><a href="Biology/human_RNA_KM40_labels.html">Visualization of a dataset of the neurons for a given treatment</a></li>
+                    </ul>
+                    <h3>Toy examples</h3>
+                    <p>In the following schemes, you can select balls on the left panel. After clicking the green 'Color' button, the population covered by those balls will be colored on the right panel.</p>
+                    <ul>
+                        <li><a href="Toy_examples/Noisy_circles_KM.html">Visualization of a toy example two noisy circles</a></li>
+                        <li><a href="Toy_examples/deformed_glasses.html">Visualization of a toy example representing deformed glasses</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 style="text-align: center;">Experience </h2>
+
+            <div class="container">
+                <div class="content">
+                    <h3>Achievements</h3>
+                    <ul>
+                        <li><strong>Creation of the theoric part including :</strong></li>
+                        <ul>
+                            <li>New utilization of AI algorithms for visualization</li>
+                            <li>An evaluation score</li>
+                            <li>Automatization of the visualization</li>
+                        </ul>
+                        <li><strong>Development of a complete python library allowing :</strong></li>
+                        <ul>
+                            <li>The computation of the method</li>
+                            <li>A graph pruning library</li>
+                            <li>A plotting library including matplotlib and Bokeh (Web visualization)</li>
+                        </ul>
+                        <li><strong>Documentation of the code</strong></li>
+                        <li><strong>Presentation of the method with conferences and notebooks</strong></li>
+                        <li><strong>Tests</strong></li>
+                        <li><strong>Writing of a scientific article</strong></li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Creation of a <strong>python</strong> pip installable library</li>
+                        <li>Creation of personnalized <strong>Bokeh</strong> Web visualization with <strong>Javascript</strong></li>
+                        <li><strong>Github</strong> utilization during the entire project</li>
+                        <li><strong>SSH</strong> and remote computations with <strong>linux</strong></li>
+                        <li><strong>seaborn, scikit-learn, networkx, matplotlib, Bokeh</strong></li>
+                    </ul>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Knowing the last AI algorithms</li>
+                        <li>Ability to understand scienfic articles</li>
+                        <li>Ability to present a project to a non-technical audience</li>
+                        <li>Management of an end to end project</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+        
+            
+        
 </div>
 
 <footer>
-    <p>© 2024 Mathis Hallier - Tous droits réservés</p>
+    <p style="text-align: center;">© 2024 Mathis Hallier - All rights reserved</p>
 </footer>
 
 </body>
