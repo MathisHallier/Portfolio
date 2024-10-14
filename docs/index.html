@@ -79,30 +79,61 @@
             text-align: justify;
 
         }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: #333;
+            color: #FBFCFA;
+            padding: 0.5em;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .btn-download {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%); 
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FBFCFA;
+            background-color: #333;
+            border: 2px solid #FBFCFA;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Mathis HALLIER's Portfolio</h1>
-</header>
+    <header>
+        <h1 style="text-align: center;">Mathis HALLIER's Portfolio</h1>
+    
+        <a class="btn-download" href="Web_dev/Mathis_Hallier_CV.pdf" download="Web_dev/Hallier_Mathis_CV.pdf">
+            Download my CV
+        </a>
+    </header>
 
 <div class="container">
         <div class="content">
             <h2>Research in AI</h2>
-            <p>This section shows the visualization method I worked on during my Research experience in Warsaw.
-            The created method allows the user visualizing complex datasets in high dimensional spaces. This method can be used for any numerical datasets such as in finance, marketing...</p>
+            <p>This section presents the visualization method I developed during my experience in Warsaw. This new method based on AI algorithms enables users to visualize complex datasets. It can be applied across various fields, including finance, marketing, and others.</p>
             <a href="recherche.html">More information</a>
             <div class="content">
-                <h3>Visualization of a Diabete dataset colored depending on the insuline level</h3>
+                <h3>Visualization of a Diabete dataset colored depending on the insulin level</h3>
                 <img src="Biology/Diabete_colored_Insuline.png" alt="Description de l'image">
             </div>
         </div>
 
         <div class="content">
-            <h2>Freelance Web Developper</h2>
-            <p>This section presents my work as a freelance Web Developper. During this experience I developped websites using mostly React and Node JS but also, WordPress, Angular and Springboot.
-            I helped customers define his needs (writing a functional specification), design a solution, cost the project and propose a schedule with different delivery dates, as well as developping it. </p>
+            <h2>Freelance Web Developer</h2>
+            <p>This section highlights my work as a freelance web developer. During this experience, I built websites primarily using React and Node.js, but also worked with WordPress, Angular, and SpringBoot. I assisted clients in defining their needs by drafting functional specifications, designing tailored solutions, estimating project costs, and proposing a timeline with multiple delivery milestones, in addition to developing the final product.</p>
             <a href="freelance.html">More information</a>
             <div class="content">
                 <h3> Homepage for the pill delivery </h3>

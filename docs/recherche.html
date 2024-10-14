@@ -90,18 +90,50 @@
             margin: 0px;
             padding: 0px;
         }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            background-color: #333;
+            color: #FBFCFA;
+            padding: 0.5em;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .btn-download {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%); 
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #FBFCFA;
+            background-color: #333;
+            border: 2px solid #FBFCFA;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Mathis HALLIER's Portfolio</h1>
-</header>
+    <header>
+        <h1 style="text-align: center;">Mathis HALLIER's Portfolio</h1>
+    
+        <a class="btn-download" href="Web_dev/Mathis_Hallier_CV.pdf" download="Web_dev/Hallier_Mathis_CV.pdf">
+            Download my CV
+        </a>
+    </header>
 
         <div class="content" style="margin-bottom: 7em;">
             <h2>Research in AI</h2>
-            <p>Analyzing any complex dataset is a challenge. A good analysis can boost the results of an instution. The analysis of a dataset always starts with a visualization allowing a good understanding of the dataset. However, visualizing complex datasets is difficult and can lead to wrong hypothesis.</p>
-            
+            <p>Analyzing complex datasets presents a significant challenge. A thorough analysis can greatly enhance an institution's outcomes. The process always begins with data visualization, which is crucial for understanding the dataset. However, visualizing complex datasets can be difficult and may lead to incorrect hypotheses.</p>
             <p>The new method I worked on during my Research experience in Warsaw allows the visualization of any dataset. We were three taking part of this project, two supervisors and I. They guided me and I was in charge of creating the theory, of the implementation with python but also of the presentation of the tool. This method based on clustering (AI) algorithms allows the user visualize complex datasets in different domains such as biological, finance, real estate and more.</p>
             <p>The following examples are showing the rendered visualization for real or toy datasets.</p>
 
@@ -136,7 +168,7 @@
                 <div class="content">
                     <h3>Achievements</h3>
                     <ul>
-                        <li><strong>Creation of the theoric part including :</strong></li>
+                        <li><strong>Creation of the theoretical part, including: :</strong></li>
                         <ul>
                             <li>New utilization of AI algorithms for visualization</li>
                             <li>An evaluation score</li>
@@ -146,7 +178,7 @@
                         <ul>
                             <li>The computation of the method</li>
                             <li>A graph pruning library</li>
-                            <li>A plotting library including matplotlib and Bokeh (Web visualization)</li>
+                            <li>A plotting library including matplotlib or Bokeh (Web visualization)</li>
                         </ul>
                         <li><strong>Documentation of the code</strong></li>
                         <li><strong>Presentation of the method with conferences and notebooks</strong></li>
@@ -162,7 +194,7 @@
                         <li>Creation of personnalized <strong>Bokeh</strong> Web visualization with <strong>Javascript</strong></li>
                         <li><strong>Github</strong> utilization during the entire project</li>
                         <li><strong>SSH</strong> and remote computations with <strong>linux</strong></li>
-                        <li><strong>seaborn, scikit-learn, networkx, matplotlib, Bokeh</strong></li>
+                        <li><strong>seaborn, scikit-learn, networkx, matplotlib, bokeh, latex</strong></li>
                     </ul>
                     <h3>Skills</h3>
                     <ul>
