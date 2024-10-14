@@ -18,6 +18,9 @@
             color: #FBFCFA;
             padding: 0.10em;
             text-align: center;
+            margin-bottom: 1em;
+            align-items: center;
+            justify-content: space-between;
         }
         img {
             max-width: 35vw;
@@ -91,11 +94,14 @@
         header h1 {
             margin: 0;
         }
-        .btn-download {
+        .right-container {
+            display: flex;
             position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%); 
+            right: 0.1em;
+            align-items: center; 
+        }
+
+        .btn-download {
             padding: 10px 20px;
             font-size: 16px;
             font-weight: bold;
@@ -107,6 +113,17 @@
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             cursor: pointer;
+            margin-right: 15px; 
+        }
+        .icon-link img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        header a {
+            text-decoration: none;
+            color: #007BFF;
+            margin-bottom: 0em;
         }
     </style>
 </head>
@@ -115,9 +132,14 @@
     <header>
         <h1 style="text-align: center;">Mathis HALLIER's Portfolio</h1>
     
-        <a class="btn-download" href="Web_dev/Mathis_Hallier_CV.pdf" download="Web_dev/Hallier_Mathis_CV.pdf">
-            Download my CV
-        </a>
+        <div class="right-container">
+            <a href="https://www.linkedin.com/in/mathis-hallier/" class="icon-link" target="_blank">
+                <img src="Web_dev/logo-linkedin.webp" alt="Icone lien">
+            </a>
+            <a class="btn-download" href="Web_dev/Mathis_Hallier_CV.pdf" download="Web_dev/Hallier_Mathis_CV.pdf">
+                Download my CV
+            </a>
+        </div>
     </header>
 
 <div class="container">
