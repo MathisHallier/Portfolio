@@ -53,7 +53,8 @@
             border-radius: 10px;
         }
         .content-column {
-            max-width: 40vw;
+            flex:1;
+            max-width: 35vw !important;
             margin: 1em auto;
             background-color: white;
             padding: 1.5em;
@@ -130,6 +131,16 @@
             border-radius: 50%;
         }
 
+        ul {
+            padding-left: 20px; /* Assure un espacement à gauche pour les listes */
+            list-style-type: disc; /* Ou autre type de style de liste */
+        }
+
+        li {
+            overflow-wrap: break-word; /* Permet aux mots de se casser pour éviter les débordements */
+            margin-bottom: 0.7em;
+        }
+
                 
     </style>
 </head>
@@ -160,36 +171,38 @@
 
             <div class="container">
 
-                <div class="content">
+                <div class="content-column">
                     <h3>Achievements</h3>
                     <ul>
-                        <li><strong>Cients from the food and logistics industries</strong></li>
-                        <li><strong>Assisting the client at defining his needs</strong></li>
-                        <ul>
-                            <li>Drafting functional specifications</li>
-                            <li>Meetings preparation : Maquettes, schemes, objectives, difficulties</li>
-                            <li>Conception and development meetings in order to get the best product</li>
-                            <li>Scheduling Calendar</li>
-                            <li>Proposition of different delivery dates in order to match Business and Technics</li>
-                        </ul>
-                        <li><strong>Project cost</strong></li>
-                        <li>Developments</li>
-                        <ul>
-                            <li><strong>Creation de l'architecture web repondant au besoin du client</strong></li>
-                            <li><strong>Design :</strong> illustrations, color, typography and web pages</li>
-                            <li>Tests</li>
-                        </ul>
-                        <li><strong>Live Web applications</strong></li>
+                        <li><strong>Needs Assessment: </strong>Assisting clients in clearly defining their project requirements.</li>
+                        <li><strong>Functional Specifications: </strong>Drafting detailed functional specifications to guide the project.</li>
+                        <li><strong>Meeting Preparation: </strong>Preparing for meetings with mockups, schematics, key objectives, and anticipated challenges.</li>
+                        <li><strong>Design and Development Workshops: </strong> Collaborating in design and development sessions to ensure the best possible product outcome.</li>
+                        <li><strong>Timeline Planning: </strong> Creating a project timeline and proposing various delivery milestones to align business needs with technical feasibility.</li>
+                        <li><strong>Cost Estimation: </strong>Providing detailed project cost assessments.</li>
+                        <li><strong>Web Application Design & Development: </strong>Designing and developing the web application to meet client specifications and business needs.</li>
+                        <li><strong>Visual Design: </strong> Developing the design, including illustrations, color schemes, typography, and web page layouts.</li>
+                        <li><strong>Testing: </strong>Conducting thorough tests to ensure the web application's quality, performance, and functionality.</li>
+                        <li><strong>Launch: </strong>Deploying the web application live for the client.</li>
                     </ul>
                 </div>
 
-                <div class="content">
+                <div class="content-column">
                     <h3>Technologies</h3>
                     <ul>
                         <li><strong>Front-end : </strong> HTML, CSS, JavaScript, React, Angular</li>
                         <li><strong>Back-end : </strong>Node.js, SpringBoot, Python</li>
                         <li><strong>Databases : </strong>MySQL, PostgreSQL, MongoDB</li>
                         <li><strong>Others : </strong>Wordpress, Git, Canva, Krita</li>
+                    </ul>
+
+                        <h3>Skills</h3>
+                    <ul>
+                        <li><strong>Organization</strong></li>
+                        <li><strong>Proactive</strong></li>
+                        <li><strong>Detailed oriented</strong></li>
+                        <li><strong>Clear communication</strong></li>
+                        <li><strong>Pedagogy</strong></li>
                     </ul>
                 </div>
             </div>
@@ -218,7 +231,4 @@
 </footer>
 
 </body>
-
-
-
 </html>
